@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="incomingPhotoCellID" id="Kg2-nL-6EJ" customClass="IncomingPhotoCell" customModule="EsoxCustomChatDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gD2-QN-Nbl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="184"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IncomingTopCurve" translatesAutoresizingMaskIntoConstraints="NO" id="hyH-d2-9dE">
+                                <rect key="frame" x="27" y="6" width="24" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="FVB-M2-ei8"/>
+                                    <constraint firstAttribute="height" constant="28" id="YKq-ou-LeV"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AvatarPic" translatesAutoresizingMaskIntoConstraints="NO" id="Jev-1N-DCa">
+                                <rect key="frame" x="8" y="12" width="38" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="38" id="Djd-Wz-lkG"/>
+                                    <constraint firstAttribute="height" constant="38" id="NA0-MM-Rdu"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1B1-et-wYB" userLabel="NameTimeView">
+                                <rect key="frame" x="51" y="6" width="157.5" height="20"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Peter Carlsson" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-Ez-hBl">
+                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="20"/>
+                                        <color key="backgroundColor" red="0.88477176430000004" green="0.95221716170000004" blue="0.99608629940000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" red="0.0078431372550000003" green="0.51372549020000002" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:52 AM " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRB-Qv-6Fd">
+                                        <rect key="frame" x="97.5" y="0.0" width="60" height="20"/>
+                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.51372549020000002" blue="0.81176470590000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="pP2-hj-9Yz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xi4-Ez-hBl" firstAttribute="top" secondItem="1B1-et-wYB" secondAttribute="top" id="Aq2-II-3Bi"/>
+                                    <constraint firstItem="eRB-Qv-6Fd" firstAttribute="top" secondItem="1B1-et-wYB" secondAttribute="top" id="BJK-Oy-w7Q"/>
+                                    <constraint firstItem="Xi4-Ez-hBl" firstAttribute="leading" secondItem="1B1-et-wYB" secondAttribute="leading" id="LRE-hs-aTd"/>
+                                    <constraint firstAttribute="bottom" secondItem="eRB-Qv-6Fd" secondAttribute="bottom" id="O4W-PS-yPM"/>
+                                    <constraint firstAttribute="trailing" secondItem="eRB-Qv-6Fd" secondAttribute="trailing" id="cET-bp-o2x"/>
+                                    <constraint firstItem="eRB-Qv-6Fd" firstAttribute="leading" secondItem="Xi4-Ez-hBl" secondAttribute="trailing" id="hm7-HD-G12"/>
+                                    <constraint firstAttribute="height" constant="20" id="i6s-1w-n0P"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xi4-Ez-hBl" secondAttribute="bottom" id="y1L-AE-e8O"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="malaysia" translatesAutoresizingMaskIntoConstraints="NO" id="ZOh-Td-FH7" customClass="CustomImage" customModule="EsoxCustomChatDemo" customModuleProvider="target">
+                                <rect key="frame" x="51" y="26" width="157.5" height="157.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZOh-Td-FH7" secondAttribute="height" multiplier="1:1" id="9AV-0C-h4S"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.27450980390000002" green="0.60392156860000001" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZOh-Td-FH7" firstAttribute="top" secondItem="1B1-et-wYB" secondAttribute="bottom" id="0ON-X9-C3Y"/>
+                            <constraint firstItem="hyH-d2-9dE" firstAttribute="leading" secondItem="Jev-1N-DCa" secondAttribute="centerX" id="11d-fS-q0f"/>
+                            <constraint firstItem="Jev-1N-DCa" firstAttribute="top" secondItem="gD2-QN-Nbl" secondAttribute="top" constant="12" id="3AN-Qc-xq2"/>
+                            <constraint firstItem="1B1-et-wYB" firstAttribute="top" secondItem="hyH-d2-9dE" secondAttribute="top" id="Wq6-rf-xzo"/>
+                            <constraint firstItem="1B1-et-wYB" firstAttribute="leading" secondItem="hyH-d2-9dE" secondAttribute="trailing" id="XvA-tp-2uq"/>
+                            <constraint firstItem="ZOh-Td-FH7" firstAttribute="trailing" secondItem="1B1-et-wYB" secondAttribute="trailing" id="YeX-uU-SWm"/>
+                            <constraint firstItem="ZOh-Td-FH7" firstAttribute="leading" secondItem="hyH-d2-9dE" secondAttribute="trailing" id="eIs-AF-IrQ"/>
+                            <constraint firstItem="Jev-1N-DCa" firstAttribute="leading" secondItem="gD2-QN-Nbl" secondAttribute="leading" constant="8" id="eR7-NM-uiU"/>
+                            <constraint firstItem="hyH-d2-9dE" firstAttribute="top" secondItem="gD2-QN-Nbl" secondAttribute="top" constant="6" id="lof-uS-v9z"/>
+                            <constraint firstItem="ZOh-Td-FH7" firstAttribute="leading" secondItem="1B1-et-wYB" secondAttribute="leading" id="qY1-Fv-eFO"/>
+                            <constraint firstAttribute="centerX" secondItem="1B1-et-wYB" secondAttribute="trailing" multiplier="0.9" id="xdN-Ym-gsl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gD2-QN-Nbl" secondAttribute="trailing" id="Edf-FQ-jWu"/>
+                <constraint firstItem="gD2-QN-Nbl" firstAttribute="top" secondItem="Kg2-nL-6EJ" secondAttribute="top" id="Kcn-mR-Jb0"/>
+                <constraint firstAttribute="bottom" secondItem="gD2-QN-Nbl" secondAttribute="bottom" id="YNx-3c-gqh"/>
+                <constraint firstItem="gD2-QN-Nbl" firstAttribute="leading" secondItem="Kg2-nL-6EJ" secondAttribute="leading" id="aJq-X5-XQY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="HDc-g1-9k4"/>
+            <size key="customSize" width="532" height="124"/>
+            <connections>
+                <outlet property="name" destination="Xi4-Ez-hBl" id="OAD-4t-8t9"/>
+                <outlet property="photo" destination="ZOh-Td-FH7" id="OxN-Ci-g8v"/>
+                <outlet property="profile" destination="Jev-1N-DCa" id="1UH-WE-24O"/>
+                <outlet property="time" destination="eRB-Qv-6Fd" id="psX-gt-b9v"/>
+            </connections>
+            <point key="canvasLocation" x="392.80000000000001" y="153.82308845577214"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="AvatarPic" width="56" height="56.5"/>
+        <image name="IncomingTopCurve" width="258" height="260"/>
+        <image name="malaysia" width="500" height="500"/>
+    </resources>
+</document>
